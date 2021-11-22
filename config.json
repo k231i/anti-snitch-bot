@@ -1,0 +1,9 @@
+{
+	"config": {
+		"token": "bot-token-here",
+		"observedChannels": [
+			"channel-id-here"
+		],
+		"offset": 86400000
+	}
+}
