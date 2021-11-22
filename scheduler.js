@@ -15,7 +15,7 @@ class Scheduler extends EventEmitter {
       console.log(error);
     }
     if (jobCache) {
-      jobs = JSON.parse(jobCache);
+      jobs.push(...JSON.parse(jobCache));
       let i = 0;
       for (const job of jobs) {
         if (job.date > new Date().getTime())
